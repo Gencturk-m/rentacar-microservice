@@ -32,7 +32,7 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>io.github.yunusyalcinkaya</groupId>
+			<groupId>io.github.Gencturk-m</groupId>
 			<artifactId>common-package-t1</artifactId>
 			<version>0.1.0-SNAPSHOT</version>
 		</dependency>
