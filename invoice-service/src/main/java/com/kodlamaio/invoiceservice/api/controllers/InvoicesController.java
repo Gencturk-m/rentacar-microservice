@@ -8,7 +8,6 @@ import com.kodlamaio.invoiceservice.business.dto.responses.create.CreateInvoiceR
 import com.kodlamaio.invoiceservice.business.dto.responses.get.GetAllInvoicesResponse;
 import com.kodlamaio.invoiceservice.business.dto.responses.get.GetInvoiceResponse;
 import com.kodlamaio.invoiceservice.business.dto.responses.update.UpdateInvoiceResponse;
-import com.kodlamaio.invoiceservice.entities.Invoice;
 import jakarta.annotation.PostConstruct;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -24,10 +23,6 @@ public class InvoicesController {
 
     private final InvoiceService service;
 
-    @PostConstruct
-    public void createDb(){
-        service.add(null);
-    }
 
     @GetMapping
     public List<GetAllInvoicesResponse> getAll() {

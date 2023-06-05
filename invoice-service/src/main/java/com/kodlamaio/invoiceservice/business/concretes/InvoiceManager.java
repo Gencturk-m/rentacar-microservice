@@ -10,15 +10,16 @@ import com.kodlamaio.invoiceservice.business.dto.responses.get.GetInvoiceRespons
 import com.kodlamaio.invoiceservice.business.dto.responses.update.UpdateInvoiceResponse;
 import com.kodlamaio.invoiceservice.entities.Invoice;
 import com.kodlamaio.invoiceservice.repository.InvoiceRepository;
+import jakarta.annotation.PostConstruct;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class InvoiceManager implements InvoiceService {
 
     private final InvoiceRepository repository;
