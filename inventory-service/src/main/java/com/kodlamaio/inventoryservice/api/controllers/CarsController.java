@@ -32,8 +32,8 @@ public class CarsController {
     private final CarService service;
 
     @GetMapping
-    //@Secured("ROLE_admin")
-    @PreAuthorize(Roles.AdminOrModerator) // or yerine and de kullanabilirsin
+    //@Secured("ROLE_user")
+    @PreAuthorize(Roles.User) // or yerine and de kullanabilirsin
     public List<GetAllCarsResponse> getAll() {
         return service.getAll();
     }
